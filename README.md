@@ -1,21 +1,21 @@
-<div align="center" id="top"> 
+<!-- <div align="center" id="top"> 
   <img src="./.github/app.gif" alt="Workout Builder App" />
 
   &#xa0;
 
   <!-- <a href="https://workoutbuilderapp.netlify.app">Demo</a> -->
-</div>
+<!-- </div> -->
 
 <h1 align="center">Workout Builder App</h1>
 
-<p align="center">
+<!-- <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{YOUR_GITHUB_USERNAME}}/workout-builder-app?color=56BEB8">
 
   <img alt="Github language count" src="https://img.shields.io/github/languages/count/{{YOUR_GITHUB_USERNAME}}/workout-builder-app?color=56BEB8">
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/{{YOUR_GITHUB_USERNAME}}/workout-builder-app?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/{{YOUR_GITHUB_USERNAME}}/workout-builder-app?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/{{YOUR_GITHUB_USERNAME}}/workout-builder-app?color=56BEB8"> -->
 
   <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/workout-builder-app?color=56BEB8" /> -->
 
@@ -31,7 +31,7 @@
 </h4> 
 
 <hr> -->
-
+<!-- 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
@@ -42,13 +42,13 @@
   <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">Author</a>
 </p>
 
-<br>
+<br> -->
 
 ## :dart: About ##
 
-Describe your project
+A web app intended to help with planning and visualizing your fitness goals by building a rountine.
 
-## :sparkles: Features ##
+<!-- ## :sparkles: Features ##
 
 :heavy_check_mark: Feature 1;\
 :heavy_check_mark: Feature 2;\
@@ -95,4 +95,4 @@ Made with :heart: by <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" targe
 
 &#xa0;
 
-<a href="#top">Back to top</a>
+<a href="#top">Back to top</a> -->
