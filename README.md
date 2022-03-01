@@ -58,7 +58,7 @@ A web app intended to help with planning and visualizing your fitness goals by b
 
 The following tools were used in this project:
 
-- [Expo](https://expo.io/)
+- [Blue Print Component Library](https://blueprintjs.com/)
 - [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
 - [React Native](https://reactnative.dev/)
