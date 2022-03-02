@@ -1,7 +1,18 @@
 import "./routinecol.css";
+import ExerciseInfo from "./ExerciseInfo";
 
-function RoutineCol({ exercises }) {
-  return <div className="routinecol-col">{exercises}</div>;
+function RoutineCol({ names, descriptions }) {
+  return (
+    <div className="routinecol-col">
+      <ExerciseInfo name={''} />
+      <ExerciseInfo name={''} />
+      <ExerciseInfo name={''} />
+      <ExerciseInfo name={''} />
+      <ExerciseInfo name={''} />
+      <ExerciseInfo name={''} />
+      <ExerciseInfo name={''} />
+    </div>
+  );
 }
 
 export default RoutineCol;

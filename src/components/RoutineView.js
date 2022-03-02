@@ -1,20 +1,20 @@
+import { SKELETON } from "@blueprintjs/core/lib/esm/common/classes";
 import RoutineCol from "./RoutineCol";
+import RoutineOptions from "./RoutineOptions";
 import "./routineview.css";
 
-function RoutineView({ days }) {
-  let someWeird = [
-    <div>Temporary Array Data</div>,
-    <div>Temporary Array Data</div>,
-    <div>Temporary Array Data</div>,
-    <div>Temporary Array Data</div>,
-  ];
+function RoutineView({ days, exercises, handleChange }) {
 
-  return (
-    <div className="routineview-container">
-      <RoutineCol exercises={someWeird}></RoutineCol>
-      <RoutineCol exercises={someWeird}></RoutineCol>
-      <RoutineCol exercises={someWeird}></RoutineCol>
-    </div>
+    return (
+      <>
+        <RoutineOptions handleChange={handleChange}/>
+      <div className="routineview-container">
+        <RoutineCol descriptions={''} names={''}></RoutineCol>
+        <RoutineCol descriptions={''} names={''}></RoutineCol>
+        <RoutineCol descriptions={''} names={''}></RoutineCol>
+        <RoutineCol descriptions={''} names={''}></RoutineCol>
+      </div>
+      </>
   );
 }
 

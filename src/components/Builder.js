@@ -9,24 +9,37 @@ import RoutineView from "./RoutineView";
 class Builder extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      days: 3,
+      split: "fullbody",
+    };
+    this.handleChange = this.handleChange.bind(this);
   }
-  state = {
-    days: 3,
-  };
+
+  handleChange(event) {
+    const {name, value} = event.target;
+    this.setState({
+      [name]: value
+    })
+  }
 
   // Grab data from API
-  // componentDidMount() {
-  //   axios("https://wger.de/api/v2/muscle/")
-  //         .then(({ data }) => this.setState({ muscles: data.results }));
-  // }
+  componentDidMount() {
+    axios("https://wger.de/api/v2/exercise/?format=json&language=2").then(
+      ({ data }) => this.setState({ exercises: data.results })
+    );
+  }
 
   render() {
     console.log(this.state);
     return (
       <>
         <Nav />
-        <RoutineOptions />
-        <RoutineView days={this.state.days} />
+        <RoutineView
+          handleChange={this.handleChange}
+          exercises={this.state.exercises ? this.state.exercises : []}
+          days={this.state.days}
+        />
       </>
     );
   }
