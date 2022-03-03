@@ -15,7 +15,12 @@ function RoutineView({ days, exercises, handleChange }) {
 function RoutineDays(days) {
   let week = [];
   for (let i = 0; i < days; i++) {
-    week.push(<RoutineCol descriptions={""} names={""}></RoutineCol>);
+    week.push(
+      <div>
+        <h3>{`Workout ${i + 1}`}</h3>
+        <RoutineCol descriptions={""} names={""}></RoutineCol>
+      </div>
+    );
   }
   return week;
 }
