@@ -24,10 +24,14 @@ class Builder extends Component {
   }
 
   // Grab data from API
-  componentDidMount() {
-    axios("https://wger.de/api/v2/exercise/?format=json&language=2").then(
-      ({ data }) => this.setState({ exercises: data.results })
-    );
+  // componentDidMount() {
+  //   axios("https://wger.de/api/v2/exercise/?format=json&language=2").then(
+  //     ({ data }) => this.setState({ exercises: data.results })
+  //   );
+  // }
+
+  routineBuilder(){
+    
   }
 
   render() {

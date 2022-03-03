@@ -52,14 +52,14 @@ A web app intended to help with planning and visualizing your fitness goals by b
 
 :heavy_check_mark: Feature 1;\
 :heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: Feature 3; -->
 
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
 
 - [Blue Print Component Library](https://blueprintjs.com/)
-- [Node.js](https://nodejs.org/en/)
+<!-- - [Node.js](https://nodejs.org/en/) 
 - [React](https://pt-br.reactjs.org/)
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
