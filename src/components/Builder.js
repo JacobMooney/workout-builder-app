@@ -17,21 +17,55 @@ class Builder extends Component {
   }
 
   handleChange(event) {
-    const {name, value} = event.target;
+    const { name, value } = event.target;
     this.setState({
-      [name]: value
-    })
+      [name]: value,
+    });
   }
 
-  // Grab data from API
-  // componentDidMount() {
-  //   axios("https://wger.de/api/v2/exercise/?format=json&language=2").then(
-  //     ({ data }) => this.setState({ exercises: data.results })
-  //   );
-  // }
+  // // Grab data from API
+  componentDidMount() {
+    let muscleData = [
+      "https://wger.de/api/v2/exercise/?format=json&language=2&limit=1000&equipment=1",
+      "https://wger.de/api/v2/exercise/?format=json&language=2&limit=1000&equipment=2",
+      "https://wger.de/api/v2/exercise/?format=json&language=2&limit=1000&equipment=3",
+      "https://wger.de/api/v2/exercise/?format=json&language=2&limit=1000&equipment=4",
+      "https://wger.de/api/v2/exercise/?format=json&language=2&limit=1000&equipment=5",
+      "https://wger.de/api/v2/exercise/?format=json&language=2&limit=1000&equipment=6",
+      "https://wger.de/api/v2/exercise/?format=json&language=2&limit=1000&equipment=7",
+      "https://wger.de/api/v2/exercise/?format=json&language=2&limit=1000&equipment=8",
+      "https://wger.de/api/v2/exercise/?format=json&language=2&limit=1000&equipment=9",
+      "https://wger.de/api/v2/exercise/?format=json&language=2&limit=1000&equipment=10",
+    ];
 
-  routineBuilder(){
-    
+    axios.all(muscleData.map((endpoint) => axios.get(endpoint))).then(
+      axios.spread((...responses) => {
+        const barbell = responses[0].data.results;
+        const swissbar = responses[1].data.results;
+        const dumbbell = responses[2].data.results;
+        const gymmat = responses[3].data.results;
+        const swissball = responses[4].data.results;
+        const pullupbar = responses[5].data.results;
+        const bodyweight = responses[6].data.results;
+        const bench = responses[7].data.results;
+        const inclinebench = responses[8].data.results;
+        const kettlebell = responses[9].data.results;
+        this.setState({
+          exercises: {
+            barbell: barbell,
+            swissbar: swissbar,
+            dumbbell: dumbbell,
+            gymmat: gymmat,
+            swissball: swissball,
+            pullupbar: pullupbar,
+            bodyweight: bodyweight,
+            bench: bench,
+            inclinebench: inclinebench,
+            kettlebell: kettlebell,
+          },
+        });
+      })
+    );
   }
 
   render() {

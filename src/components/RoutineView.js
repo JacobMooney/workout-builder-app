@@ -7,18 +7,18 @@ function RoutineView({ days, exercises, handleChange }) {
   return (
     <>
       <RoutineOptions handleChange={handleChange} />
-      <div className="routineview-container">{RoutineDays(days)}</div>
+      <div className="routineview-container">{RoutineDays(days, exercises)}</div>
     </>
   );
 }
 
-function RoutineDays(days) {
+function RoutineDays(days, exercises) {
   let week = [];
   for (let i = 0; i < days; i++) {
     week.push(
       <div>
         <h3>{`Workout ${i + 1}`}</h3>
-        <RoutineCol descriptions={""} names={""}></RoutineCol>
+        <RoutineCol exercises={exercises} descriptions={""} names={""}></RoutineCol>
       </div>
     );
   }

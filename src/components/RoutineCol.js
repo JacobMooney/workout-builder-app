@@ -1,16 +1,11 @@
 import "./routinecol.css";
 import ExerciseInfo from "./ExerciseInfo";
 
-function RoutineCol({ names, descriptions }) {
+function RoutineCol({ exercises }) {
+  // console.log('Inside the col', exercises.arms);
   return (
     <div className="routinecol-col">
-      <ExerciseInfo name={''} />
-      <ExerciseInfo name={''} />
-      <ExerciseInfo name={''} />
-      <ExerciseInfo name={''} />
-      <ExerciseInfo name={''} />
-      <ExerciseInfo name={''} />
-      <ExerciseInfo name={''} />
+      {/* {exercises && <ExerciseInfo bodypart={exercises[0][0].name} name={''} />} */}
     </div>
   );
 }
