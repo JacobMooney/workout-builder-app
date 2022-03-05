@@ -18,7 +18,7 @@ function RoutineDays(days, exercises) {
     week.push(
       <div>
         <h3>{`Workout ${i + 1}`}</h3>
-        <RoutineCol exercises={exercises} descriptions={""} names={""}></RoutineCol>
+        <RoutineCol key={i+1} exercises={exercises} descriptions={""} names={""}></RoutineCol>
       </div>
     );
   }
