@@ -7,7 +7,7 @@ function ExerciseInfo({ category, lift }) {
       <div>
         <strong>{lift}</strong>
       </div>
-      <div>{`Catagory / Muscle : ${findBodyPart(category)}`}</div>
+      <div>{`Category / Muscle : ${findBodyPart(category)}`}</div>
     </div>
   );
 }

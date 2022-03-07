@@ -68,8 +68,37 @@ class Builder extends Component {
     );
   }
 
+  // generateRoutine(days, ...exercises) {
+  //   return (
+  //     <React.Fragment>
+  //       <li>
+  //         <h5>{compounds[days % compounds.length]}:</h5> 5 Sets x 5 Reps
+  //       </li>
+  //       <li>
+  //         <h5>{compounds[(days + 2) % compounds.length]}:</h5> 5 Sets x 5 Reps
+  //       </li>
+  //       <li>
+  //         <h5>{legs.exercises[days % legs.exercises.length]}:</h5> 3 Sets x 10
+  //         Reps
+  //       </li>
+  //       <li>
+  //         <h5>{pull.exercises[[days % pull.exercises.length]]}:</h5> 3 Sets x 10
+  //         Reps
+  //       </li>
+  //       <li>
+  //         <h5>{push.exercises[[days % push.exercises.length]]}:</h5> 3 Sets x 10
+  //         Reps
+  //       </li>
+  //       <li>
+  //         <h5>{abdominals.exercises[days % abdominals.exercises.length]}:</h5> 3
+  //         Sets x 25-30 Reps
+  //       </li>
+  //     </React.Fragment>
+  //   );
+  // }
+
   render() {
-    // console.log(this.state);
+    console.log(this.state);
     return (
       <>
         <Nav />
